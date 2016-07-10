@@ -1,0 +1,130 @@
+html,body{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+}
+.clearfix:after,
+.clearfix:before{
+	content: " ";
+	display: table;
+}
+.clearfix:after{
+	clear: both;
+}
+.swiper-container{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.swiper-slide{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.slide1{
+	background-color: #0d2b4c;
+	background-size: 100% 100%;
+}
+.slide1 .top{
+	margin:1.2rem auto;
+	width: 70%;
+	height: 10%;
+}
+.slide1 .top img{
+	width: 100%;
+	display: block;
+	border:0;
+}
+.slide1 .bottom{
+	margin:2.8rem auto;
+	width: 70%;
+	height: 10%;
+}
+.slide1 .bottom img{
+	width: 100%;
+	display: block;
+	border:0;
+}
+.swiper-slide img{
+	display: block;
+	width: 100%;
+	position: absolute;
+	bottom-left:0.5rem;
+}
+.slide7 .b01{
+	width: 3.59rem;
+	height: 0.67rem;
+	margin-left: 1.39rem;
+}
+.slide7  .b02{
+	width: 4.32rem;
+	height: 0.87rem;
+	margin-left: 1.05rem;
+	margin-top: 0.64rem;
+}
+.slide7 .b03{
+	width: 2.93rem;
+	height: 0.54rem;
+	margin-left: 1.89rem;
+	margin-top: 0.25rem;
+}
+.slide7  .b04{
+	width: 2.81rem;
+	height: 0.56rem;
+	margin-left: 1.8rem;
+	margin-top: 0.49rem;
+}
+.slide5 .top{
+	width: 6.11rem;
+	height: 4.6rem;
+	margin-top: 0.17rem;
+	margin-left: 0.14rem;
+	margin-bottom: 0.6rem;
+}
+.slide5 .b01{
+	width: 1.94rem;
+	height: 0.68rem;
+	margin-left: 2.19rem;
+	margin-bottom: 0.78rem;
+}
+.slide5 .b02{
+	width: 3.11rem;
+	height: 0.56rem;
+	margin-left: 1.63rem;
+	margin-bottom: 0.46rem;
+}
+.slide5 .b03{
+	width: 2.97rem;
+	height: 1.35rem;
+	margin-left: 1.77rem;
+}
+
+.slide7 .top{
+	width: 6.11rem;
+	height: 4.6rem;
+	margin-top: 0.17rem;
+	margin-left: 0.14rem;
+	margin-bottom: 0.6rem;
+	position: relative;
+}
+.slide7 .top_left{
+	width: 2.98rem;
+	height: 3.96rem;
+	position: absolute;
+	left: 0rem;
+	top:0.6rem;
+}
+.slide7 .top_right{
+	width: 4.73rem;
+	height: 3.04rem;
+	position: absolute;
+	right: 0rem;
+	top:1.55rem;
+}
+.swiper-pagination{
+	position: absolute;
+	right:0.1;
+	top:50%;
+}

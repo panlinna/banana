@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+	<title>香蕉电商</title>
+	<script src="js/fontsize.js"></script>
+	<link rel="stylesheet" href="css/swiper-3.3.1.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide slide1">
+        	<div class="ani top" swiper-animate-effect="fadeInLeft">
+        		<img src="images/page1_top.png" alt="">
+        	</div>
+        	<div class="ani bottom" swiper-animate-effect="fadeInRight">
+        		<img src="images/page1_bom.png" alt="">
+        	</div>
+        </div>
+
+        <div class="swiper-slide slide5">
+            <div class="ani top" swiper-animate-effect="pulse">
+                <img src="images/slide5_t-img.png" alt="">
+            </div>
+            <div class="bottom">
+                <div class="ani b01" swiper-animate-effect="fadeInLeft">
+                    <img src="images/slide5_b1.png" alt="">
+                </div>
+                <div class="ani b02" swiper-animate-effect="fadeInRight">
+                    <img src="images/slide5_b2.png" alt="">
+                </div>
+                <div class="ani b03" swiper-animate-effect="fadeInLeft">
+                    <img src="images/slide5_b3.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide slide7">
+            <div class="top">
+                <div class="ani top_center" swiper-animate-effect="fadeInDown">
+                    <img src="images/slide7_top_center.png" alt="">
+                </div>
+                <div class="ani top_left" swiper-animate-effect="bounceInLeft">
+                    <img src="images/slide7_top_left.png" alt="">
+                </div>
+                <div class="ani top_right" swiper-animate-effect="bounceInRight">
+                    <img src="images/slide7_top_right.png" alt="">
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="ani b01" swiper-animate-effect="bounceInUp">
+                    <img src="images/b01.png" alt="">
+                </div>
+                <div class="ani b02" swiper-animate-effect="fadeInRight">
+                    <img src="images/b02.png" alt="">
+                </div>
+                <div class="ani b03" swiper-animate-effect="fadeInLeft">
+                  <img src="images/b03.png" alt="">
+                </div>
+                <div class="ani b04" swiper-animate-effect="fadeInRight">
+                  <img src="images/b04.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+	</div>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/swiper-3.3.1.jquery.min.js"></script>
+	<script src="js/swiper.animate1.0.2.min.js"></script>
+	<script>
+		var mySwiper = new Swiper ('.swiper-container', {
+			direction:'vertical',
+		    loop: true,
+		    onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+			    swiperAnimateCache(swiper); //隐藏动画元素
+			    swiperAnimate(swiper); //初始化完成开始动画
+			  },
+			  onSlideChangeEnd: function(swiper){
+			    swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+			  }
+		  })
+	</script>
+</body>
+</html>
